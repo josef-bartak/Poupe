@@ -23,21 +23,31 @@
         <!-- Set the background colour of the document -->
         <style>
             body {
-                background: #0;
+                background: #000;
                 color: #cccccc;
                 margin: 0px;
                 padding: 0px;
                 border: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
             }
 
             canvas {
                 image-rendering: optimizeSpeed;
+                image-rendering: pixelated;
                 -webkit-interpolation-mode: nearest-neighbor;
                 -ms-touch-action: none;
                 touch-action: none;
                 margin: 0px;
                 padding: 0px;
                 border: 0px;
+                width: 100vw;
+                height: 100vh;
+                object-fit: contain;
             }
             :-webkit-full-screen #canvas {
                 width: 100%;
