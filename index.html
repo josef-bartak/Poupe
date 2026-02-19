@@ -148,7 +148,7 @@
             var btnPlus  = document.getElementById('btn-plus');
             var btnMinus = document.getElementById('btn-minus');
 
-            var pct = parseInt(localStorage.getItem('gameSize_poupe') || '100', 10);
+            var pct = parseInt(localStorage.getItem('gameSize_poupe') || '200', 10);
 
             function applySize(p) {
                 pct = Math.min(200, Math.max(25, p));
